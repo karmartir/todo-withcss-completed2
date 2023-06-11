@@ -46,7 +46,7 @@ const Form = ({input, setInput, todos, setTodos, editTodo, setEditTodo}) => {
             />
 
             <button
-                className='button-add'
+            className={`${editTodo ? "change" : "button-add"}` }
                 type='submit'
             >
                 {editTodo ? 'Change' : 'Add'}
